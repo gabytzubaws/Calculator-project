@@ -57,6 +57,27 @@ operator[4].addEventListener("click", function(){
             current = display.innerHTML;
             break;
         }
+        case '-':
+        {
+            display.innerHTML = previous - current;
+            previous = current;
+            current = display.innerHTML;
+            break;
+        }
+        case '+':
+        {
+            display.innerHTML = previous + current;
+            previous = current;
+            current = display.innerHTML;
+            break;
+        }
+        case '%':
+        {
+            display.innerHTML = (previous / current);
+            previous = current;
+            current = display.innerHTML;
+            break;
+        }
     }
     operation = 0;
 
